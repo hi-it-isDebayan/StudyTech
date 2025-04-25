@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="/assignments">Assignments</a></li>
+                <li><a href="/announcements">Announcements</a></li>
+                <li><a href="/test">Take Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Student Portal</h1>
+
+        <!-- Login Form -->
+        <section id="login-section">
+            <h2>Enter Portal</h2>
+            <form action="/login" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="code">Code:</label>
+                <input type="text" id="code" name="code" required>
+
+                <button type="submit">Enter</button>
+            </form>
+        </section>
+
+        <!-- User Status and Calendar -->
+        <section class="calendar">
+            <h2>Class Calendar</h2>
+            <!-- You can use a calendar library or generate a table dynamically here -->
+            <div id="calendar-placeholder">[Calendar will be shown here]</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>WhatsApp Group: <a href="your-whatsapp-link" target="_blank">Join Now</a></p>
+        <p>Teacher's Phone: <a href="tel:your-phone-number">Your Teacher</a></p>
+    </footer>
+</body>
+</html>
